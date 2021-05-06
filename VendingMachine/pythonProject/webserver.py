@@ -2,7 +2,23 @@ from flask import Flask, render_template
 from controller import setup
 app = Flask(__name__)
 
+# get the data from the controller
+the_vending_machine = setup()
+
+# format data into html f-string template
+html = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>Vending Machine</title>
+    <link rel="stylesheet" type="text/css" href="static/table_style.css">
+    </head>
+    <body>
+    <!-- {str(the_vending_machine)} -->
+    {the_vending_machine.to_table()}
+    </body>
+    """
 @app.route('/')
 def index():
-    theVendingMachine = setup()
-    return render_template('index.html')
+    return html
+    #return render_template('index.html')

@@ -9,18 +9,27 @@
   <script src="src/VendingMachine.js"></script>
   <script src="src/Controller.js"></script>
   <script src="src/View.js"></script>
+  <script src="src/Coin.js"></script>
 
 </head>
-
+<img class='logo', src="src/Ara-Logo.jpg">
 <body>
   <script>
   var theVendingMachine
 
   function main () {
+
     theVendingMachine = Controller.setup()
+    console.log(theVendingMachine.allMyCoins.length)
     console.log(theVendingMachine)
-	//print(theVendingMachine.toString())
-	print(theVendingMachine.toTable())
+  //print(theVendingMachine.toString())
+	//print(theVendingMachine.toTable())
+
+	console.log(theVendingMachine.allMyCoins)
+
+  //print(theVendingMachine.toStringCoin())
+
+	print(theVendingMachine.toCoinTable())
   }
 
   window.onload = main

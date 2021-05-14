@@ -1,8 +1,29 @@
 table {
-    width : 50%;
+  width: 50%;
 }
- table, th, td {
-    border : black solid 1px;
-    border-collapse : collapse;
+table, th, td {
+  border: black solid 1px;
+  border-collapse: collapse;
+  background-color: #97DEFB;
 }
 
+td {
+  background-color: #BFEEFF;
+  padding: 10px;
+  text-align: center;
+
+}
+
+#right{
+  width: 85%;
+}
+
+th{
+  padding: 16px;
+  font-size: 160%;
+}
+
+.logo{
+  height: 15%;
+  width: 15%;
+}

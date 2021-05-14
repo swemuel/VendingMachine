@@ -11,11 +11,11 @@ html = f"""
     <html lang="en">
     <head>
     <title>Vending Machine</title>
-    <link rel="stylesheet" type="text/css" href="static/table_style.css">
+    <link rel="stylesheet" type="text/css" href="static/table.css">
     </head>
     <body>
     <!-- {str(the_vending_machine)} -->
-    {the_vending_machine.to_table()}
+    {the_vending_machine.to_table_coin()}
     </body>
     """
 @app.route('/')

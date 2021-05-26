@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lanf="en">
+<head>
+  <meta charset="utf-8">
+  <title>VendingMachine 2021</title>
+  <link rel="stylesheet" type="text/css" href="table_style.css">
+
+  <!-- include source files here... -->
+  <script src="src/VendingMachine.js"></script>
+  <script src="src/Controller.js"></script>
+  <script src="src/View.js"></script>
+  <script src="src/Coin.js"></script>
+  <script src="src/Product.js"></script>
+
+</head>
+<img class='logo', src="src/Ara-Logo.jpg">
+<body>
+  <script>
+  var theVendingMachine
+
+  function main () {
+
+    theVendingMachine = Controller.setup()
+	
+	//console.log(theVendingMachine)
+    //print(theVendingMachine.toString())
+	//print(theVendingMachine.toTable())
+	
+	//print(theVendingMachine.toStringCoin())
+	//console.log(theVendingMachine.allMyCoins)
+	print(theVendingMachine.toCoinTable())
+	
+	console.log(theVendingMachine.allMyProducts)
+	print(theVendingMachine.toProductTable())
+
+  }
+
+  window.onload = main
+  </script>
+
+</body>
+</html>
